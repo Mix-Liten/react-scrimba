@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import TodoItem from '../../components/TodoList/TodoItem'
 import todosData from "../../todosData"
-// import logo from './logo.svg'
 
 class TodoList extends Component {
   constructor() {
