@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FormComponent(props) {
   return (
-    <main>
+    <>
       <form>
         <input 
           name="firstName" 
@@ -93,21 +93,26 @@ export default function FormComponent(props) {
         </label>
         <br />
         
-        <button>Submit</button>
+        <button onClick={props.handleSubmit}>Submit</button>
       </form>
 
       <hr />
-
-      <h2>Entered information:</h2>
-      <p>Your name: {props.data.firstName} {props.data.lastName}</p>
-      <p>Your age: {props.data.age}</p>
-      <p>Your gender: {props.data.gender}</p>
-      <p>Your destination: {props.data.destination}</p>
-      <p>Your dietary restrictions:</p>
-      
-      <p>Vegan: {props.data.isVegan ? "Yes" : "No"}</p>
-      <p>Kosher: {props.data.isKosher ? "Yes" : "No"}</p>
-      <p>Lactose Free: {props.data.isLactoseFree ? "Yes" : "No"}</p>
-    </main>
+      {
+        props.isSubmit ?
+          <>
+            <h2>Entered information:</h2>
+            <p>Your name: {props.data.firstName} {props.data.lastName}</p>
+            <p>Your age: {props.data.age}</p>
+            <p>Your gender: {props.data.gender}</p>
+            <p>Your destination: {props.data.destination}</p>
+            <p>Your dietary restrictions:</p>
+            
+            <p>Vegan: {props.data.isVegan ? "Yes" : "No"}</p>
+            <p>Kosher: {props.data.isKosher ? "Yes" : "No"}</p>
+            <p>Lactose Free: {props.data.isLactoseFree ? "Yes" : "No"}</p>
+          </>
+          : null
+      }
+    </>
   )
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import TodoItem from '../../components/TodoList/TodoItem'
 import todosData from "../../fixtures/todosData"
+import './style.css'
 
 class TodoList extends Component {
   constructor() {
@@ -29,8 +30,10 @@ class TodoList extends Component {
     const todoItems = this.state.todos.map(todo => <TodoItem key={todo.id} todo={todo} handleChange={this.handleChange} />)
 
     return (
-      <div className="todo-list">
-        {todoItems}
+      <div className="mt-200">
+        <div className="todo-list">
+          {todoItems}
+        </div>
       </div>
     )
   }

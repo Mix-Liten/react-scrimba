@@ -1,15 +1,15 @@
 import React from 'react'
-import Trollface from '../assets/Trollface.png'
+import Trollface from '../../assets/Trollface.png'
 
 const Header = () => {
   return (
-    <header>
+    <div className="meme_logo">
       <img 
         src={Trollface} 
         alt="Trollface"
       />
       <p>Meme Generator</p>
-    </header>
+    </div>
   )
 }
 

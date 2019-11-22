@@ -1,6 +1,8 @@
 import React, {
   Component
 } from "react"
+import Header from '../../components/MemeGenerator/Header'
+import './style.css'
 
 class MemeGenerator extends Component {
   constructor() {
@@ -49,31 +51,34 @@ class MemeGenerator extends Component {
 
   render() {
     return (
-      <div>
-        <form className="meme-form" onSubmit={this.handleSubmit}>
-          <input 
-            type="text"
-            name="topText"
-            placeholder="Top Text"
-            value={this.state.topText}
-            onChange={this.handleChange}
-          /> 
-          <input 
-            type="text"
-            name="bottomText"
-            placeholder="Bottom Text"
-            value={this.state.bottomText}
-            onChange={this.handleChange}
-          /> 
-        
-          <button>Gen</button>
-        </form>
-        <div className="meme">
-          <img src={this.state.randomImg} alt="" />
-          <h2 className="top">{this.state.topText}</h2>
-          <h2 className="bottom">{this.state.bottomText}</h2>
+      <div className="wrapper mt-100">
+        <Header />
+        <div className="">
+          <form className="meme-form" onSubmit={this.handleSubmit}>
+            <input 
+              type="text"
+              name="topText"
+              placeholder="Top Text"
+              value={this.state.topText}
+              onChange={this.handleChange}
+            /> 
+            <input 
+              type="text"
+              name="bottomText"
+              placeholder="Bottom Text"
+              value={this.state.bottomText}
+              onChange={this.handleChange}
+            /> 
+          
+            <button>Gen</button>
+          </form>
+          <div className="meme">
+            <img src={this.state.randomImg} alt="" />
+            <h2 className="top">{this.state.topText}</h2>
+            <h2 className="bottom">{this.state.bottomText}</h2>
+          </div>
         </div>
-    </div>
+      </div>
     )
   }
 }

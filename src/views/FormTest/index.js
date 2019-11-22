@@ -14,9 +14,11 @@ class FormTest extends Component {
       destination: "",
       isVegan: false,
       isKosher: false,
-      isLactoseFree: false
+      isLactoseFree: false,
+      isSubmit: false,
     }
     this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange(event) {
@@ -35,12 +37,27 @@ class FormTest extends Component {
       })
   }
 
+  handleSubmit(event) {
+    event.preventDefault()
+    if (!this.state.isSubmit) {
+      this.setState({
+        isSubmit: !this.state.isSubmit
+      })
+    }
+  }
+
   render() {
     return (
-      <FormComponent
-        handleChange={this.handleChange}
-        data={this.state}
-      />
+      <div className="wrapper">
+        <div className="mt-100">
+          <FormComponent
+            isSubmit={this.state.isSubmit}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+            data={this.state}
+          />
+        </div>
+      </div>
     )
   }
 }
