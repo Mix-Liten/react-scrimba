@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "./react-scrimba/static/css/main.7202fac2.chunk.css",
-    "main.js": "./react-scrimba/static/js/main.04d6836d.chunk.js",
-    "main.js.map": "./react-scrimba/static/js/main.04d6836d.chunk.js.map",
-    "runtime-main.js": "./react-scrimba/static/js/runtime-main.e35d684b.js",
-    "runtime-main.js.map": "./react-scrimba/static/js/runtime-main.e35d684b.js.map",
-    "static/js/2.1e31604f.chunk.js": "./react-scrimba/static/js/2.1e31604f.chunk.js",
-    "static/js/2.1e31604f.chunk.js.map": "./react-scrimba/static/js/2.1e31604f.chunk.js.map",
-    "index.html": "./react-scrimba/index.html",
-    "precache-manifest.330b4761ad7dff19259be298b40d1526.js": "./react-scrimba/precache-manifest.330b4761ad7dff19259be298b40d1526.js",
-    "service-worker.js": "./react-scrimba/service-worker.js",
-    "static/css/main.7202fac2.chunk.css.map": "./react-scrimba/static/css/main.7202fac2.chunk.css.map",
-    "static/media/Trollface.png": "./react-scrimba/static/media/Trollface.be324d5b.png",
-    "static/media/logo.svg": "./react-scrimba/static/media/logo.ee7cd8ed.svg"
+    "main.css": "/react-scrimba/static/css/main.7202fac2.chunk.css",
+    "main.js": "/react-scrimba/static/js/main.30572612.chunk.js",
+    "main.js.map": "/react-scrimba/static/js/main.30572612.chunk.js.map",
+    "runtime-main.js": "/react-scrimba/static/js/runtime-main.c4dcb08f.js",
+    "runtime-main.js.map": "/react-scrimba/static/js/runtime-main.c4dcb08f.js.map",
+    "static/js/2.1e31604f.chunk.js": "/react-scrimba/static/js/2.1e31604f.chunk.js",
+    "static/js/2.1e31604f.chunk.js.map": "/react-scrimba/static/js/2.1e31604f.chunk.js.map",
+    "index.html": "/react-scrimba/index.html",
+    "precache-manifest.287caad288b44839e04118909a3b9aa3.js": "/react-scrimba/precache-manifest.287caad288b44839e04118909a3b9aa3.js",
+    "service-worker.js": "/react-scrimba/service-worker.js",
+    "static/css/main.7202fac2.chunk.css.map": "/react-scrimba/static/css/main.7202fac2.chunk.css.map",
+    "static/media/Trollface.png": "/react-scrimba/static/media/Trollface.be324d5b.png",
+    "static/media/logo.svg": "/react-scrimba/static/media/logo.ee7cd8ed.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e35d684b.js",
+    "static/js/runtime-main.c4dcb08f.js",
     "static/js/2.1e31604f.chunk.js",
     "static/css/main.7202fac2.chunk.css",
-    "static/js/main.04d6836d.chunk.js"
+    "static/js/main.30572612.chunk.js"
   ]
 }
